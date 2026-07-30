@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-   
+    <div class="flex">
+        <h1>Welcome to RPS Game!</h1>
+        <h3>Choose your weapon:</h3>
+        <div class="choice-board">
+                <button id="rock" class="choiceBtn">Rock✊</button>
+                <button id="paper" class="choiceBtn">Paper🤚</button>
+                <button id="scissors" class="choiceBtn">Scissors✌️</button>
+        </div>
+
+            <div class="score-board-labels">
+                <span id="userScoreLabel">You</span>
+                <span id="computerScoreLabel">CPU</span>
+            </div>
+
+            <div class="score-board">
+                <div id="userScore">0</div>
+                <div id="computerScore">0</div>
+                
+            </div>
+            <div class="winner-board-message">
+                <span id="resultsLabel">Results:</span>
+                
+            </div>
+            <div id="winner-board">
+                
+            </div>
+            <div>
+                <button id="resetBtn">Restart Game</button>
+            </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
